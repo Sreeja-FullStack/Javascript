@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(40, 30, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box{
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    border: 1px solid #333;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    /* font-size: 16px; */
+    color: white;
+}
+::placeholder{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.input-box div{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.fa-eye{
+    position: absolute;
+    color: white;
+}
+button{
+    position: absolute;
+    padding: 18px;
+    width: 60px;
+    background-color: #cfa4d9; /* Add a background color */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+}
+.fa-angle-right{
+    font-size: 20px;
+    color: rgb(54, 37, 71);
+}
+#msg{
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    font-size: 15px;
+    display: none;
+}
+#msg span{
+    color: green;
+    font-weight: 400;
+    font-size: 20px;
+}
