@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(125, 21, 38);
+}
+
+#accordion{
+    margin: 40px;
+    padding: 20px;
+}
+
+ul li{
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 10px;
+    list-style: none;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 24px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+span{
+    transform: rotate(90deg);
+    color: dodgerblue;
+    font-size: 24px;
+}
+
+.content{
+    padding: 7px;
+    line-height: 26px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s;
+    /* visibility: hidden; */
+}
+
+label + input[type="radio"] {
+    display: none;
+  }
+
+label + input[type="radio"]:checked + .content{
+    max-height: 500px;
+}
+
+
+

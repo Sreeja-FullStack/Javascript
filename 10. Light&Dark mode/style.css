@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+h1{
+    color: #f3904f;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    background-color: blue;
+    position: relative;
+    border-radius: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider styling */
+.slider {
+    position: absolute;
+    transition: all 0.3s ease-in-out; /* Smoother transition */    
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer; /* Indicates it's clickable */
+}
+
+/* Thumb inside the slider */
+.slider::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #f3904f;
+    transition: all 0.3s ease-in-out; /* Smoother transition for thumb */
+}
+
+/* Hover effect on slider */
+.slider:hover {
+    background-color: rgb(117, 82, 88);
+    border: 1px solid violet;
+}
+
+.slider:hover::before {
+    background-color: rgb(241, 101, 101); /* Lighter pink on hover */
+    border: 0.6px solid violet; /* Violet border on hover */
+}
+
+/* When the switch is toggled (input checked) */
+input:checked + .slider::before {
+    transform: translateX(40px); /* Moves the thumb fully to the right */
+    background-color: #f3904f; /* Changes thumb to orange */
+}
+
+input:checked + .slider {
+    background-color: #a4785a; /* Changes slider background to orange */
+}
+
+/* Focus state for better accessibility */
+input:focus + .slider {
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adds blue focus outline for accessibility */
+}

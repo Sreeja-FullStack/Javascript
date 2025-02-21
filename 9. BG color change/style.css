@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #d76d77;
+    /* transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+button{
+    transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 10px;
+    border: 2px solid brown;
+    background: linear-gradient(120deg, #3a6186, #89253e);
+    background-color: #3a6186;
+    font-size: 24px;
+}
+
+button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+button:active{
+    padding: 15px;
+}

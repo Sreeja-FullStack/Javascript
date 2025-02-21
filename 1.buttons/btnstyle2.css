@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    border: 1px solid;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    padding: 2rem 3rem;
+    position: relative;
+    transition: all 3s;
+}
+
+a::before{
+    content: "button";
+    position: absolute;
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(226, 125, 43);
+    color: white;
+    font-size: 20px;
+    /* padding: 2rem 3rem; */
+    transform: rotateX(270deg);
+    transform-origin: top;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+a::after{
+    content: "button";
+    position: absolute;
+    border: 1px solid;
+    /* height: 100%;
+    width: 100%; */
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(226, 43, 119);
+    color: white;
+    font-size: 20px;
+    padding: 2.85rem 4.5rem;
+    /* transform: rotateX(270deg); */
+    transform: rotateY(270deg);
+    transform-origin: top;
+    transition: all 2s;
+    transition-delay: 1s;
+}
+a:hover::before,
+a:hover::after{
+    transform: rotateX(0);
+    transform: rotatey(0);
+}

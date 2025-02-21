@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    font-weight: bold;
+    background: url(image.png);
+    background-size: cover;
+    background-clip: text;
+    /* apply background to text */
+    /* -webkit-background-clip: text; */
+    color: transparent;
+}
