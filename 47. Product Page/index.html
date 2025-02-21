@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="img/product.png" class="img1">
+            <img src="img/product2.png" class="img2">
+            <img src="img/product3.png" class="img3">
+            <div class="image-changer">
+                <button class="switch-1" data-enabled="true"></button>
+                <button class="switch-2" data-enabled="false"></button>
+                <button class="switch-3" data-enabled="false"></button>
+            </div>
+
+        </div>
+        <div class="section2">
+            <div class="header">
+                <h1>Orange Juice</h1>
+                <h3 id="price">$15.00</h3>
+                <p id="discount">30% OFF</p>
+                <p id="desc">100% pure orange juice with no added sugars, preservatives, or artificial flavors.</p>
+            </div>
+            <div class="propertise">
+                <div class="grid">
+                    <div class="heading">Size</div>
+                    <div>S</div>
+                    <div>M</div>
+                    <div>L</div>
+                    <div>XL</div>
+                    <div>XXL</div>
+                </div>
+                <div class="grid">
+                    <div class="heading">Color</div>
+                    <div class="color red"></div>
+                    <div class="color green"></div>
+                    <div class="color blue"></div>
+                    <div class="color gray"></div>
+                </div>
+                <label>Quantity</label>
+                <input type="number" class="quantity" required placeholder="0">
+            </div>
+            <button type ="submit">Buy Now</button>
+        </div>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

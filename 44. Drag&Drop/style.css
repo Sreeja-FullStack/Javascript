@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* #ebd6dc */
+    background: #674d66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left, #right{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed #fff;
+}
+.list{
+    background-color: #ed473b;
+    height: 60px;
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.list img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+body{
+    background: #dadada;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #131921;
+    padding: 10px 20px;
+    color: white;
+}
+.nav-country{
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+}
+.nav-country h1{
+    color: white;
+    font-size: 14px;
+}
+.nav-search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background: #fff;
+    color: gray;
+    max-width: 1000px;
+    border-radius: 4px;
+    margin-left: 15px; 
+    height: 45px;
+}
+.nav-search-gategory{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    color: #525253;
+    font-size: 15px;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+}
